@@ -19,4 +19,13 @@
     * (pros): intuitive
     * (cons): memory issue when handdling big corpus; sparse matrix
   * Word2Vec
-    * 
+    * to overcome following limitation;
+     * memory issue; no use of mini-batch, parallelization using gpu; hard to improve learning pipeline
+    * 추론 : 주변 단어(맥락)이 주어졌을 때 “?”에 무슨 단어(중심단어)가 들어가는지를 추측하는 작업
+    * Word2Vec은 “비슷한 위치에 등장하는 단어들은 비슷한 의미를 가진다“ 라는 가정을 통해서 학습을 진행합니다
+     * 원-핫벡터 형태의 sparse matrix 이 가지는 단점을 해소하고자 저차원의 공간에 벡터로 매핑하는 것이 특징
+    * CBOW: inferencing the middie word using neighborhood
+    * Skip-gram: inferencing neighbor words using the middle words
+   
+ * (pros) cold start에 좋을 수 있고(feature 들어오면 embedding 시켜서 유사도 계산하면 됨으로) ; 설명 용이
+ * (cons) metadata가 없으면 잘 안되는 경우 존재 --> feature 추출에 대한 중요성
