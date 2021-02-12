@@ -37,3 +37,4 @@ Based on SKT program @210212
     * repeat
     
 ## What about cold-start? (new clients)
+ * Target group에 따라 적합한 알고리즘 적용(ex. new client --> high priori, then as time goes, personalized)
