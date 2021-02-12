@@ -27,3 +27,6 @@
     * Because one is fixed and update alternatively, the other one always become convex; convergence guaranteed
     * 물음표는 0으로,
     * 풀어냈을 때의 값은 최적화 solution으로 analytical하게 정의되어 있어서 대입하면 되어버림
+
+* (pros) no domain knowledge; easy to find new interests; implicit data
+* (cons) hard to handle new items(clients) --> need to learn again; hard to integrate side features 
